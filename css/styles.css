@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+ 
+body{
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30 px 15%;
+    background: transparent;
+    transition: all ease .45s;
+    
+}
+.logo{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.logo span{
+    color: crimson;
+}
+
+/* NavBar */
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+    margin: 20px 25px ;
+    text-decoration: none;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: crimson;
+}
+/* Menú lateral */
+.menu-btn{
+    background: linear-gradient(100deg, crimson 0%,#191919 100%);
+    box-shadow: 0px 20px 40px #2a292970;
+    border: 1px solid #303030;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+.menu-btn span{
+    color:aliceblue;
+    font-size: 15px;
+    font-weight: 300;
+}
+i{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+      
+
+/* Informacion e imagen */
+section{
+    padding: 0 10%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between ;
+    gap: 30px;
+}
+.home-img{
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.home-text span{
+    padding: 5px 25px ;
+    background: linear-gradient(100deg, crimson 0%,#191919 100%);
+    box-shadow: 0px 20px 40px #2a292970;
+    border: 1px solid #303030;
+    border-radius: 100px;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.home-text p{
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+/* Nombre con fondo */
+.container{
+    background: black;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+}
+.texto{
+    width: 100%;
+    color: transparent;
+    text-align-last: right;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: bold;
+
+    background-image: url(https://th.bing.com/th/id/R.1e20865b1890bc0a5d2b2189d68c8716?rik=0UWyAuqLRMh3Yg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f8IF8Orn.jpg&ehk=zWwH4UeDoPlqzjdQxfBy7wDsV%2bLehVAB9oNnHpvLjS8%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+/* Botones */
+.boton{
+    display: inline-block;
+    padding: 15px 35px;
+    color: aliceblue;
+    border: 2px solid crimson;
+    font-weight: 600;
+    background: crimson;
+    font-size: 15px;
+    transition:all 0.6s ease-in-out;
+    border-radius: 8px;
+    
+}
+
+.boton:hover{
+    transform: translateY(-5px);
+    background: transparent;
+    color: crimson;
+}
+.dos{
+    background: black ;
+    border: 2px solid black;
+    color: aliceblue;
+    margin-left: 25px;
+}
+.dos:hover{
+    color: black;
+    background: aliceblue;
+    border: 2px solid black;
+}
+.pie{
+    position: relative;
+    bottom: 3rem;
+    left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.redes i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 5px 5px;
+    transition: all 0.6s ease-in-out;
+    background: linear-gradient(100deg, crimson 0%,#191919 100%);
+    box-shadow: 0px 20px 40px #2a292970;
+    border: 1px solid #303030;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+.redes i:hover{
+    transform: translateY(-10px);
+}
+
+@media (max-width: 1850px){
+    header{
+        padding: 15px 8%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 8%;
+        transition: .2s;
+    }
+    .pie{
+        left: 8%;
+        transition: .2s;
+    }
+}                                                           
